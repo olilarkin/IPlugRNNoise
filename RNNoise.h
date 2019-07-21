@@ -29,7 +29,8 @@ private:
   DenoiseState* sts;
   int frameCount = 0;
   float ibuffer[kNumFrames] {};
-  float obuffer[kNumFrames] {};
+  int outFrameCount = 0;
+  float obuffer[kNumFrames * 2] {};
   double mPreviousSR = DEFAULT_SAMPLE_RATE;
 #endif
 };
